@@ -1,0 +1,5 @@
+com/coupa/commentable/interfaces/AssignmentCommentable.class
+com/coupa/commentable/annotation/EnableCommentable.class
+com/coupa/commentable/interfaces/AssignmentCommentable$AssignmentOptions.class
+com/coupa/commentable/model/Comment.class
+com/coupa/commentable/interfaces/Commentable.class
