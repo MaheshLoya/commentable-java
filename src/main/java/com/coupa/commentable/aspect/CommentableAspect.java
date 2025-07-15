@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 public class CommentableAspect {
     private static final Logger logger = LoggerFactory.getLogger(CommentableAspect.class);
 
-    @Before("execution(* com.yourcompany.commentable.interfaces.AssignmentCommentable+.assign*(..)) && target(commentable)")
+    @Before("execution(* com.coupa.commentable.interfaces.AssignmentCommentable+.assign*(..)) && target(commentable)")
     public void beforeAssignment(AssignmentCommentable commentable) {
         logger.debug("Intercepting assignment for commentable: {}", commentable.getId());
         Object[] args = new Object[0]; // Simplified; extract args as needed

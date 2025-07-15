@@ -8,7 +8,7 @@ Add the dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>com.yourcompany.commentable</groupId>
+    <groupId>com.coupa.commentable</groupId>
     <artifactId>spring-boot-commentable</artifactId>
     <version>1.0.0</version>
 </dependency>
@@ -19,7 +19,7 @@ Add the dependency to your `pom.xml`:
 Enable the module in your Spring Boot application:
 
 ```java
-import com.yourcompany.commentable.annotation.EnableCommentable;
+import com.coupa.commentable.annotation.EnableCommentable;
 
 @SpringBootApplication
 @EnableCommentable
@@ -33,8 +33,8 @@ public class Application {
 Implement the `Commentable` or `AssignmentCommentable` interface in your entity:
 
 ```java
-import com.yourcompany.commentable.interfaces.AssignmentCommentable;
-import com.yourcompany.commentable.model.Comment;
+import com.coupa.commentable.interfaces.AssignmentCommentable;
+import com.coupa.commentable.model.Comment;
 
 @Entity
 public class Invoice implements AssignmentCommentable {
